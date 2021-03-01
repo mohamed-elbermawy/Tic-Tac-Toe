@@ -18,6 +18,8 @@ import javafx.stage.StageStyle;
  */
 public class Tictactoe extends Application {
     
+//    private static SqlHandler sql;
+
     @Override
     public void start(Stage stage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("Login.fxml"));
@@ -33,6 +35,20 @@ public class Tictactoe extends Application {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        SqlHandler sql = new SqlHandler();
+//        if(sql.login("mohamed", "12345")){
+//            System.out.println("exists");
+//        }else{
+//            System.out.println("not exists");
+//        }
+
+//        if(sql.signUp("mohamed", "123456")){
+//            System.out.println("inserted");
+//        }else{
+//            System.out.println("not inserted");
+//        }
+        
+        
         launch(args);
     }
     

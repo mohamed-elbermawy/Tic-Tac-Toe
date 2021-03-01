@@ -15,6 +15,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
@@ -29,9 +30,10 @@ public class SignUpController implements Initializable {
     /**
      * Initializes the controller class.
      */
-    
-    Redirection redirect = new Redirection();
-    
+    private Redirection redirect = new Redirection();
+    private SqlHandler sql;
+    private Alert alert;
+
     @FXML
     private TextField username;
 
@@ -49,17 +51,42 @@ public class SignUpController implements Initializable {
 
     @FXML
     void back(ActionEvent event) throws IOException {
-        redirect.redirction("FirstScreen.fxml", event);
+        redirect.redirction("Login.fxml", event);
     }
 
     @FXML
     void signUpProccess(ActionEvent event) throws IOException {
-        redirect.redirction("FirstScreen.fxml", event);
+        sql = new SqlHandler();
+        if (username.getText().isEmpty() || password.getText().isEmpty() || confirmPassword.getText().isEmpty()) {
+            alert = new Alert(Alert.AlertType.ERROR);
+            alert.setHeaderText("Enter Your Data");
+            alert.show();
+            return;
+        } else {
+            if (password.getText().equals(confirmPassword.getText())) {
+                if (sql.signUp(username.getText().toString(), password.getText().toString())) {
+                    alert = new Alert(Alert.AlertType.CONFIRMATION);
+                    alert.setHeaderText("Registered sucessfully");
+                    alert.showAndWait();
+                } else {
+                    alert = new Alert(Alert.AlertType.ERROR);
+                    alert.setHeaderText("Please Try again");
+                    alert.show();
+                    return;
+                }
+            } else {
+                alert = new Alert(Alert.AlertType.ERROR);
+                alert.setHeaderText("Invalid Data please check it again");
+                alert.show();
+                return;
+            }
+        }
+        redirect.redirction("Login.fxml", event);
     }
-    
+
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
-    }    
-    
+    }
+
 }

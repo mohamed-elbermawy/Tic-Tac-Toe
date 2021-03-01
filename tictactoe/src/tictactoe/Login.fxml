@@ -8,8 +8,8 @@
 
 <AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="770.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tictactoe.LoginController">
    <children>
-      <TextField layoutX="236.0" layoutY="153.0" prefHeight="40.0" prefWidth="300.0" promptText="Enter username" />
-      <TextField layoutX="236.0" layoutY="214.0" prefHeight="40.0" prefWidth="300.0" promptText="Password" />
+      <TextField fx:id="username" layoutX="236.0" layoutY="153.0" prefHeight="40.0" prefWidth="300.0" promptText="Enter username" />
+      <TextField fx:id="password" layoutX="236.0" layoutY="214.0" prefHeight="40.0" prefWidth="300.0" promptText="Password" />
       <Label layoutX="327.0" layoutY="60.0" prefHeight="72.0" prefWidth="188.0" text="Login" textAlignment="CENTER" textOverrun="CENTER_WORD_ELLIPSIS">
          <font>
             <Font name="Khmer OS System" size="36.0" />
@@ -20,14 +20,14 @@
             <Font name="FreeSerif Bold" size="20.0" />
          </font>
       </Button>
-      <Button fx:id="backBtn" layoutX="236.0" layoutY="323.0" mnemonicParsing="false" onAction="#back" prefHeight="40.0" prefWidth="300.0" text="Exit">
+      <Button fx:id="backBtn" layoutX="236.0" layoutY="323.0" mnemonicParsing="false" onAction="#exit" prefHeight="40.0" prefWidth="300.0" text="Exit">
          <font>
             <Font name="FreeSerif Bold" size="20.0" />
          </font>
       </Button>
-      <Label layoutX="236.0" layoutY="385.0" text="Do have an account ? sign up Now">
+      <Label layoutX="236.0" layoutY="385.0" prefHeight="21.0" prefWidth="300.0" text="Don't have an account ? sign up Now">
          <font>
-            <Font size="17.0" />
+            <Font size="16.0" />
          </font>
       </Label>
       <Button fx:id="signUp" layoutX="311.0" layoutY="433.0" mnemonicParsing="false" onAction="#signUpPage" prefHeight="40.0" prefWidth="150.0" text="Sign up">
