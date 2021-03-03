@@ -23,6 +23,7 @@ public class Redirection {
     
     void redirction(String fxmlPageName,ActionEvent event) throws IOException{
         Parent root = FXMLLoader.load(getClass().getResource(fxmlPageName));
+        root.getStylesheets().add(getClass().getResource("css/menu-background.css").toString());
         Scene scene = new Scene(root);
 
         stage = (Stage) ((Node)event.getSource()).getScene().getWindow();

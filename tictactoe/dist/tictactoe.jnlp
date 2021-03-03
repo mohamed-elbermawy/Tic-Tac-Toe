@@ -8,8 +8,10 @@
   </information>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="lib/jfoenix-8.0.10.jar" size="2710207" download="eager" />
+    <jar href="lib/jfoenix-9.0.10.jar" size="2432549" download="eager" />
     <jar href="lib/mysql-connector-java-8.0.13.jar" size="2132635" download="eager" />
-    <jar href="tictactoe.jar" size="9903" download="eager" />
+    <jar href="tictactoe.jar" size="146373" download="eager" />
   </resources>
   <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="tictactoe" >
     <param name="requiredFXVersion" value="8.0+"/>

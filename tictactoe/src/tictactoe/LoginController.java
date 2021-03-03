@@ -68,7 +68,7 @@ public class LoginController implements Initializable {
             return;
         } else {
             if (sql.login(username.getText().toString(), password.getText().toString())) {
-                redirect.redirction("FirstScreen.fxml", event);
+                redirect.redirction("StartMenu.fxml", event);
             } else {
                 alert = new Alert(Alert.AlertType.ERROR);
                 alert.setHeaderText("Please Try again");

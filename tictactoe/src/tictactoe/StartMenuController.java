@@ -23,7 +23,7 @@ import javafx.stage.Stage;
  *
  * @author mohamed
  */
-public class FirstScreenController implements Initializable {
+public class StartMenuController implements Initializable {
     
     Redirection redirect = new Redirection();
     
@@ -45,15 +45,13 @@ public class FirstScreenController implements Initializable {
     Alert aler;
 
     @FXML
-    void newGame(ActionEvent event) {
-       aler = new Alert(Alert.AlertType.CONFIRMATION);
-       aler.setContentText("New Game");
-       aler.show();
+    void newGame(ActionEvent event) throws IOException {
+        redirect.redirction("NewGame.fxml", event);
     }
     
     @FXML
     void signUp(ActionEvent event) throws IOException {
-        redirect.redirction("SignUp.fxml", event);
+        //redirect.redirction("SignUp.fxml", event);
     }
 
     @FXML

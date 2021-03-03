@@ -1,0 +1,16 @@
+.bodybg{
+ -fx-background-image: url('../img/temp.jpg');
+ -fx-background-size: 100% 100%;
+}
+.mute{
+ -fx-background-image: url('../img/mute.png');
+ -fx-background-size: 100% 100%;
+}
+.volume{
+ -fx-background-image: url('../img/volume.png');
+ -fx-background-size: 100% 100%;
+}
+.bodybg1{
+ -fx-background-image: url('../img/blur-cover.jpg');
+ -fx-background-size: 100% 100%;
+}

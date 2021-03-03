@@ -1,39 +1,138 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
 <?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="770.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tictactoe.LoginController">
+<AnchorPane id="AnchorPane" fx:id="anchorPaneLogin" prefHeight="550.0" prefWidth="800.0" styleClass="bodybg" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tictactoe.LoginController">
    <children>
-      <TextField fx:id="username" layoutX="236.0" layoutY="153.0" prefHeight="40.0" prefWidth="300.0" promptText="Enter username" />
-      <TextField fx:id="password" layoutX="236.0" layoutY="214.0" prefHeight="40.0" prefWidth="300.0" promptText="Password" />
-      <Label layoutX="327.0" layoutY="60.0" prefHeight="72.0" prefWidth="188.0" text="Login" textAlignment="CENTER" textOverrun="CENTER_WORD_ELLIPSIS">
+      <Text layoutX="128.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username" wrappingWidth="172.53671264648438">
          <font>
-            <Font name="Khmer OS System" size="36.0" />
+            <Font name="Showcard Gothic" size="30.0" />
+         </font>
+         <fill>
+            <RadialGradient centerX="0.46000001695421" centerY="0.8206106997628249" radius="0.752336475336663">
+               <stops>
+                  <Stop color="#ea7426" />
+                  <Stop color="#f0e54d" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </fill>
+         <stroke>
+            <RadialGradient centerX="0.46000001695421" centerY="0.8206106997628249" focusDistance="0.42056077440208384" radius="0.752336475336663">
+               <stops>
+                  <Stop color="#ea7426" />
+                  <Stop color="#f0e54d" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </stroke>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Text>
+      <TextField fx:id="username" layoutX="400.0" layoutY="187.0" prefHeight="34.0" prefWidth="251.0" promptText="Username" />
+      <Text layoutX="128.0" layoutY="284.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" wrappingWidth="172.53671264648438">
+         <font>
+            <Font name="Showcard Gothic" size="30.0" />
+         </font>
+         <fill>
+            <RadialGradient centerX="0.46000001695421" centerY="0.8206106997628249" radius="0.752336475336663">
+               <stops>
+                  <Stop color="#ea7426" />
+                  <Stop color="#f0e54d" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </fill>
+         <stroke>
+            <RadialGradient centerX="0.46000001695421" centerY="0.8206106997628249" focusDistance="0.42056077440208384" radius="0.752336475336663">
+               <stops>
+                  <Stop color="#ea7426" />
+                  <Stop color="#f0e54d" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </stroke>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Text>
+      <TextField fx:id="password" layoutX="400.0" layoutY="258.0" prefHeight="34.0" prefWidth="251.0" promptText="password" />
+      <JFXButton fx:id="loginBtn" buttonType="RAISED" layoutX="420.0" layoutY="352.0" onAction="#loginProccess" prefHeight="34.0" prefWidth="149.0" style="-fx-border-color: #f0e54d; -fx-border-width: 3px; -fx-border-radius: 25%;" text="login">
+         <font>
+            <Font name="Showcard Gothic" size="26.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.46000001695421" centerY="0.8206106997628249" focusDistance="0.42056077440208384" radius="0.752336475336663">
+               <stops>
+                  <Stop color="#ea7426" />
+                  <Stop color="#f0e54d" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </JFXButton>
+      <Text layoutX="316.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="login" wrappingWidth="149.59999918937683">
+         <font>
+            <Font name="Showcard Gothic" size="50.0" />
+         </font>
+         <fill>
+            <RadialGradient centerX="0.46000001695421" centerY="0.8206106997628249" radius="0.752336475336663">
+               <stops>
+                  <Stop color="#ea7426" />
+                  <Stop color="#f0e54d" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </fill>
+         <stroke>
+            <RadialGradient centerX="0.46000001695421" centerY="0.8206106997628249" focusDistance="0.42056077440208384" radius="0.752336475336663">
+               <stops>
+                  <Stop color="#ea7426" />
+                  <Stop color="#f0e54d" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </stroke>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Text>
+      <Label layoutX="237.0" layoutY="444.0" text="Don't have an account please sign up Now" textFill="#d3950ef0">
+         <font>
+            <Font name="DejaVu Sans Mono Bold" size="13.0" />
          </font>
       </Label>
-      <Button fx:id="loginBtn" layoutX="236.0" layoutY="274.0" mnemonicParsing="false" onAction="#loginProccess" prefHeight="40.0" prefWidth="300.0" text="Login">
+      <JFXButton fx:id="signUp" buttonType="RAISED" layoutX="311.0" layoutY="481.0" onAction="#signUpPage" prefHeight="34.0" prefWidth="149.0" style="-fx-border-color: #f0e54d; -fx-border-width: 3px; -fx-border-radius: 25%;" text="Sign up">
          <font>
-            <Font name="FreeSerif Bold" size="20.0" />
+            <Font name="Showcard Gothic" size="26.0" />
          </font>
-      </Button>
-      <Button fx:id="backBtn" layoutX="236.0" layoutY="323.0" mnemonicParsing="false" onAction="#exit" prefHeight="40.0" prefWidth="300.0" text="Exit">
+         <textFill>
+            <RadialGradient centerX="0.46000001695421" centerY="0.8206106997628249" focusDistance="0.42056077440208384" radius="0.752336475336663">
+               <stops>
+                  <Stop color="#ea7426" />
+                  <Stop color="#f0e54d" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </JFXButton>
+      <JFXButton fx:id="backBtn" buttonType="RAISED" layoutX="227.0" layoutY="351.0" onAction="#exit" prefHeight="34.0" prefWidth="149.0" style="-fx-border-color: red; -fx-border-width: 3px; -fx-border-radius: 25%;" text="exit">
          <font>
-            <Font name="FreeSerif Bold" size="20.0" />
+            <Font name="Showcard Gothic" size="26.0" />
          </font>
-      </Button>
-      <Label layoutX="236.0" layoutY="385.0" prefHeight="21.0" prefWidth="300.0" text="Don't have an account ? sign up Now">
-         <font>
-            <Font size="16.0" />
-         </font>
-      </Label>
-      <Button fx:id="signUp" layoutX="311.0" layoutY="433.0" mnemonicParsing="false" onAction="#signUpPage" prefHeight="40.0" prefWidth="150.0" text="Sign up">
-         <font>
-            <Font size="20.0" />
-         </font>
-      </Button>
+         <textFill>
+            <RadialGradient centerX="0.46000001695421" centerY="0.8206106997628249" focusDistance="0.42056077440208384" radius="0.752336475336663">
+               <stops>
+                  <Stop color="#ea7426" />
+                  <Stop color="#f0e54d" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
    </children>
 </AnchorPane>

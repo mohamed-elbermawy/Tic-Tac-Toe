@@ -23,9 +23,10 @@ public class Tictactoe extends Application {
     @Override
     public void start(Stage stage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("Login.fxml"));
+        root.getStylesheets().add(getClass().getResource("css/menu-background.css").toString());
         
         Scene scene = new Scene(root);
-//        stage.initStyle(StageStyle.DECORATED);
+        stage.setResizable(false);
         stage.setTitle("Tic Tac Toe Game");
         stage.setScene(scene);
         stage.show();
