@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="bt1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="547.0" prefWidth="730.0" style="-fx-background-color: rgba(6, 85, 122, 1);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.SinglePlayerController">
+   <children>
+      <Label fx:id="winloselabel" layoutX="3.0" layoutY="377.0" prefHeight="93.0" prefWidth="722.0" style="-fx-text-alignment: center; -fx-alignment: center;" textAlignment="CENTER" textFill="#f9fbfc">
+         <font>
+            <Font name="BatangChe" size="44.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="237.0" layoutY="101.0" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="244.0" prefWidth="257.0">
+         <children>
+            <ImageView fitHeight="271.0" fitWidth="277.0" layoutX="-5.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@213667-200.png" />
+               </image>
+            </ImageView>
+            <Button id="b1" fx:id="b1" layoutX="-13.0" mnemonicParsing="false" onAction="#b1pressed" prefHeight="93.0" prefWidth="98.0" style="-fx-background-color: transparent; -fx-border-width: 2;" textFill="#e0930b">
+               <font>
+                  <Font name="Gill Sans MT Bold" size="41.0" />
+               </font>
+            </Button>
+            <Button id="b4" fx:id="b4" layoutX="-13.0" layoutY="86.0" mnemonicParsing="false" onAction="#b4pressed" prefHeight="93.0" prefWidth="98.0" style="-fx-background-color: transparent; -fx-border-width: 2;" textFill="#e0930b">
+               <font>
+                  <Font name="Gill Sans MT Bold" size="41.0" />
+               </font>
+            </Button>
+            <Button id="b7" fx:id="b7" layoutX="-13.0" layoutY="183.0" minHeight="-Infinity" mnemonicParsing="false" onAction="#b7pressed" prefHeight="93.0" prefWidth="98.0" style="-fx-background-color: transparent; -fx-border-width: 2;" textFill="#e0930b">
+               <font>
+                  <Font name="Gill Sans MT Bold" size="41.0" />
+               </font>
+            </Button>
+            <Button id="b2" fx:id="b2" layoutX="83.0" mnemonicParsing="false" onAction="#b2pressed" prefHeight="93.0" prefWidth="98.0" style="-fx-background-color: transparent; -fx-border-width: 2;" textFill="#e0930b">
+               <font>
+                  <Font name="Gill Sans MT Bold" size="41.0" />
+               </font>
+            </Button>
+            <Button id="b5" fx:id="b5" layoutX="85.0" layoutY="87.0" mnemonicParsing="false" onAction="#b5pressed" prefHeight="93.0" prefWidth="98.0" style="-fx-background-color: transparent; -fx-border-width: 2;" textFill="#e0930b">
+               <font>
+                  <Font name="Gill Sans MT Bold" size="41.0" />
+               </font>
+            </Button>
+            <Button id="b8" fx:id="b8" layoutX="83.0" layoutY="183.0" minHeight="-Infinity" mnemonicParsing="false" onAction="#b8pressed" prefHeight="93.0" prefWidth="98.0" style="-fx-background-color: transparent; -fx-border-width: 2;" textFill="#e0930b">
+               <font>
+                  <Font name="Gill Sans MT Bold" size="41.0" />
+               </font>
+            </Button>
+            <Button id="b6" fx:id="b6" layoutX="183.0" layoutY="86.0" mnemonicParsing="false" onAction="#b6pressed" prefHeight="93.0" prefWidth="98.0" style="-fx-background-color: transparent; -fx-border-width: 2;" textFill="#e0930b">
+               <font>
+                  <Font name="Gill Sans MT Bold" size="41.0" />
+               </font>
+            </Button>
+            <Button id="b9" fx:id="b9" layoutX="183.0" layoutY="183.0" minHeight="-Infinity" mnemonicParsing="false" onAction="#b9pressed" prefHeight="93.0" prefWidth="98.0" style="-fx-background-color: transparent; -fx-border-width: 2;" textFill="#e0930b">
+               <font>
+                  <Font name="Gill Sans MT Bold" size="41.0" />
+               </font>
+            </Button>
+            <Button id="b3" fx:id="b3" layoutX="183.0" mnemonicParsing="false" onAction="#b3pressed" prefHeight="93.0" prefWidth="98.0" style="-fx-background-color: transparent; -fx-border-width: 2;" textFill="#e0930b">
+               <font>
+                  <Font name="Gill Sans MT Bold" size="41.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Label layoutX="44.0" layoutY="47.0" text="Player" textFill="#de210b">
+         <font>
+            <Font name="Rockwell Extra Bold" size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="599.0" layoutY="47.0" text="Player" textFill="#de0b0b">
+         <font>
+            <Font name="Rockwell Extra Bold" size="28.0" />
+         </font>
+      </Label>
+      <Label fx:id="playerChoice" layoutX="39.0" layoutY="82.0" prefHeight="100.0" prefWidth="88.0" style="-fx-alignment: center;" text="X" textFill="#fbfbfa">
+         <font>
+            <Font name="Gill Sans MT Bold" size="69.0" />
+         </font>
+      </Label>
+      <Label fx:id="playerChoice1" layoutX="592.0" layoutY="82.0" prefHeight="85.0" prefWidth="88.0" style="-fx-alignment: center;" text="o" textFill="#fbfbfa">
+         <font>
+            <Font name="Gill Sans MT Bold" size="69.0" />
+         </font>
+      </Label>
+      <Button fx:id="replayBtn" contentDisplay="CENTER" layoutX="323.0" layoutY="24.0" mnemonicParsing="false" onAction="#replayPressed" prefHeight="46.0" prefWidth="119.0" style="-fx-background-color: white;" text="Replay" textFill="#cd0f0f">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="vollome" contentDisplay="CENTER" layoutX="24.0" layoutY="487.0" mnemonicParsing="false" onAction="#replayPressed" prefHeight="46.0" prefWidth="42.0" style="-fx-background-color: white;" text="v" textFill="#cd0f0f">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="small" contentDisplay="CENTER" layoutX="88.0" layoutY="487.0" mnemonicParsing="false" onAction="#replayPressed" prefHeight="46.0" prefWidth="42.0" style="-fx-background-color: white;" text="n" textFill="#cd0f0f">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="exitBtn1" layoutX="334.0" layoutY="487.0" mnemonicParsing="false" onAction="#exitPressed" prefHeight="43.0" prefWidth="98.0" style="-fx-background-color: white;" text="Exit">
+         <font>
+            <Font name="Footlight MT Light" size="24.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
