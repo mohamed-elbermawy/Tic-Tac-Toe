@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tic_tac_toe.TwoPlayersLocalController">
+   <children>
+      <Button fx:id="btn5" layoutX="400.0" layoutY="185.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="115.0" prefWidth="200.0" style="-fx-border-color: gray;">
+         <font>
+            <Font name="MV Boli" size="45.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn2" layoutX="400.0" layoutY="70.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="115.0" prefWidth="200.0" style="-fx-border-color: gray;" textAlignment="CENTER">
+         <font>
+            <Font name="MV Boli" size="45.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn8" layoutX="400.0" layoutY="300.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="115.0" prefWidth="200.0" style="-fx-border-color: gray;" textAlignment="CENTER">
+         <font>
+            <Font name="MV Boli" size="45.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn4" layoutX="200.0" layoutY="185.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="115.0" prefWidth="200.0" style="-fx-border-color: gray;">
+         <font>
+            <Font name="MV Boli" size="45.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn0" layoutY="70.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="115.0" prefWidth="200.0" style="-fx-border-color: gray;">
+         <font>
+            <Font name="MV Boli" size="45.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn6" layoutY="300.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="115.0" prefWidth="200.0" style="-fx-border-color: gray;">
+         <font>
+            <Font name="MV Boli" size="45.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn3" layoutY="185.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="115.0" prefWidth="200.0" style="-fx-border-color: gray;">
+         <font>
+            <Font name="MV Boli" size="45.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn7" layoutX="200.0" layoutY="300.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="115.0" prefWidth="200.0" style="-fx-border-color: gray;">
+         <font>
+            <Font name="MV Boli" size="45.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn1" layoutX="200.0" layoutY="70.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="115.0" prefWidth="200.0" style="-fx-border-color: gray;">
+         <font>
+            <Font name="MV Boli" size="45.0" />
+         </font>
+      </Button>
+      <Label fx:id="label" prefHeight="71.0" prefWidth="600.0" style="-fx-alignment: center; -fx-background-color: black;" textAlignment="CENTER" textFill="#19ff00">
+         <font>
+            <Font name="Ink Free" size="37.0" />
+         </font>
+         <padding>
+            <Insets bottom="14.0" />
+         </padding>
+      </Label>
+   </children>
+</AnchorPane>
