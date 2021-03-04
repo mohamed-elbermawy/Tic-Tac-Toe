@@ -49,13 +49,13 @@ public class NewgameController implements Initializable {
     }
 
     @FXML
-    void twoPlayerOfflineMode(ActionEvent event) {
-
+    void twoPlayerOfflineMode(ActionEvent event) throws IOException {
+        redirect.redirction("MultiPlayerLocal.fxml", event);
     }
 
     @FXML
-    void twoPlayerOnineMode(ActionEvent event) {
-
+    void twoPlayerOnineMode(ActionEvent event) throws IOException {
+        redirect.redirction("Online.fxml", event);
     }
     
     @Override

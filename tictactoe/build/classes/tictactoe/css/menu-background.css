@@ -14,3 +14,47 @@
  -fx-background-image: url('../img/blur-cover.jpg');
  -fx-background-size: 100% 100%;
 }
+.online{
+ -fx-background-image: url('../img/online-background.JPG');
+ -fx-background-size: 100% 100%;
+}
+.avatar1{
+ -fx-background-image: url('../img/avatar/1.png');
+ -fx-background-size: 100% 100%;
+}
+.avatar2{
+ -fx-background-image: url('../img/avatar/2.png');
+ -fx-background-size: 100% 100%;
+}
+.avatar3{
+ -fx-background-image: url('../img/avatar/3.png');
+ -fx-background-size: 100% 100%;
+}
+.avatar4{
+ -fx-background-image: url('../img/avatar/4.png');
+ -fx-background-size: 100% 100%;
+}
+.avatar5{
+ -fx-background-image: url('../img/avatar/5.png');
+ -fx-background-size: 100% 100%;
+}
+.avatar6{
+ -fx-background-image: url('../img/avatar/6.png');
+ -fx-background-size: 100% 100%;
+}
+.avatar7{
+ -fx-background-image: url('../img/avatar/7.png');
+ -fx-background-size: 100% 100%;
+}
+.avatar8{
+ -fx-background-image: url('../img/avatar/8.png');
+ -fx-background-size: 100% 100%;
+}
+.avatar9{
+ -fx-background-image: url('../img/avatar/9.png');
+ -fx-background-size: 100% 100%;
+}
+.comp{
+ -fx-background-image: url('../img/avatar/comp.png');
+ -fx-background-size: 100% 100%;
+}

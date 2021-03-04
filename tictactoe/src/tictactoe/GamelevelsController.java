@@ -44,18 +44,18 @@ public class GamelevelsController implements Initializable {
     }
 
     @FXML
-    void easyLevel(ActionEvent event) {
-
+    void easyLevel(ActionEvent event) throws IOException {
+        redirect.redirction("Single.fxml", event);
     }
 
     @FXML
-    void hardLevel(ActionEvent event) {
-
+    void hardLevel(ActionEvent event) throws IOException {
+        redirect.redirction("Single.fxml", event);
     }
 
     @FXML
-    void mediumlevel(ActionEvent event) {
-
+    void mediumlevel(ActionEvent event) throws IOException {
+        redirect.redirction("Single.fxml", event);
     }
     
     @Override

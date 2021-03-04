@@ -28,19 +28,6 @@ public class SqlHandler {
     private String dbName = "TIC_TAC_TOE_DB";
     private String dbUserName = "admin";
     private String dbPassword = "12345";
-
-//    public SqlHandler(String dbName,String dbUserName,String dbPassword){
-//        try {
-//            DriverManager.registerDriver(new com.mysql.cj.jdbc.Driver());
-//            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/"+dbName, dbUserName,dbPassword);
-//            System.out.println("DB Connected");
-////            this.dbName = dbName;
-////            this.dbUserName = dbUserName;
-////            this.dbPassword = dbPassword;
-//        } catch (SQLException ex) {
-//            Logger.getLogger(SqlHandler.class.getName()).log(Level.SEVERE, null, ex);
-//        }
-//    }
     
     public boolean isConnected() {
         try {

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="550.0" prefWidth="800.0" styleClass="bodybg" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tictactoe.SingleController">
+   <children>
+      <Text layoutX="160.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="player" wrappingWidth="121.33676147460938">
+         <font>
+            <Font name="Showcard Gothic" size="30.0" />
+         </font>
+         <fill>
+            <RadialGradient centerX="0.46000001695421" centerY="0.8206106997628249" radius="0.752336475336663">
+               <stops>
+                  <Stop color="#ea7426" />
+                  <Stop color="#f0e54d" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </fill>
+         <stroke>
+            <RadialGradient centerX="0.46000001695421" centerY="0.8206106997628249" focusDistance="0.42056077440208384" radius="0.752336475336663">
+               <stops>
+                  <Stop color="#ea7426" />
+                  <Stop color="#f0e54d" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </stroke>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Text>
+      <TextField layoutX="95.0" layoutY="296.0" prefHeight="34.0" prefWidth="238.0" promptText="Enter you name" />
+      <JFXButton buttonType="RAISED" layoutX="325.0" layoutY="416.0" prefHeight="34.0" prefWidth="149.0" style="-fx-border-color: #f0e54d; -fx-border-width: 3px; -fx-border-radius: 25%;" text="play">
+         <font>
+            <Font name="Showcard Gothic" size="26.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.46000001695421" centerY="0.8206106997628249" focusDistance="0.42056077440208384" radius="0.752336475336663">
+               <stops>
+                  <Stop color="#ea7426" />
+                  <Stop color="#f0e54d" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="617.0" layoutY="54.0" opacity="0.96" prefHeight="34.0" prefWidth="39.0" ripplerFill="WHITE" styleClass="volume" textFill="#ffffff00" />
+      <JFXButton buttonType="RAISED" layoutX="687.0" layoutY="54.0" opacity="0.96" prefHeight="34.0" prefWidth="39.0" ripplerFill="WHITE" styleClass="mute" textFill="#ffffff00" />
+      <Text layoutX="496.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="computer" wrappingWidth="172.53671264648438">
+         <font>
+            <Font name="Showcard Gothic" size="30.0" />
+         </font>
+         <fill>
+            <RadialGradient centerX="0.46000001695421" centerY="0.8206106997628249" radius="0.752336475336663">
+               <stops>
+                  <Stop color="#ea7426" />
+                  <Stop color="#f0e54d" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </fill>
+         <stroke>
+            <RadialGradient centerX="0.46000001695421" centerY="0.8206106997628249" focusDistance="0.42056077440208384" radius="0.752336475336663">
+               <stops>
+                  <Stop color="#ea7426" />
+                  <Stop color="#f0e54d" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </stroke>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Text>
+      <Text layoutX="380.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="vs" wrappingWidth="39.20001983642578">
+         <font>
+            <Font name="Showcard Gothic" size="30.0" />
+         </font>
+         <fill>
+            <RadialGradient centerX="0.46000001695421" centerY="0.8206106997628249" radius="0.752336475336663">
+               <stops>
+                  <Stop color="#ea7426" />
+                  <Stop color="#f0e54d" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </fill>
+         <stroke>
+            <RadialGradient centerX="0.46000001695421" centerY="0.8206106997628249" focusDistance="0.42056077440208384" radius="0.752336475336663">
+               <stops>
+                  <Stop color="#ea7426" />
+                  <Stop color="#f0e54d" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </stroke>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Text>
+      <Text layoutX="200.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="x" wrappingWidth="27.20001983642578">
+         <font>
+            <Font name="Showcard Gothic" size="30.0" />
+         </font>
+         <fill>
+            <RadialGradient centerX="0.46000001695421" centerY="0.8206106997628249" radius="0.752336475336663">
+               <stops>
+                  <Stop color="#ea7426" />
+                  <Stop color="#f0e54d" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </fill>
+         <stroke>
+            <RadialGradient centerX="0.46000001695421" centerY="0.8206106997628249" focusDistance="0.42056077440208384" radius="0.752336475336663">
+               <stops>
+                  <Stop color="#ea7426" />
+                  <Stop color="#f0e54d" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </stroke>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Text>
+      <Text layoutX="560.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="o" wrappingWidth="27.20001983642578">
+         <font>
+            <Font name="Showcard Gothic" size="30.0" />
+         </font>
+         <fill>
+            <RadialGradient centerX="0.46000001695421" centerY="0.8206106997628249" radius="0.752336475336663">
+               <stops>
+                  <Stop color="#ea7426" />
+                  <Stop color="#f0e54d" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </fill>
+         <stroke>
+            <RadialGradient centerX="0.46000001695421" centerY="0.8206106997628249" focusDistance="0.42056077440208384" radius="0.752336475336663">
+               <stops>
+                  <Stop color="#ea7426" />
+                  <Stop color="#f0e54d" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </stroke>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Text>
+      <JFXButton buttonType="RAISED" layoutX="106.0" layoutY="345.0" opacity="0.96" prefHeight="35.0" prefWidth="39.0" ripplerFill="WHITE" styleClass="avatar1" textFill="#ffffff00">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="166.0" layoutY="345.0" opacity="0.96" prefHeight="35.0" prefWidth="39.0" ripplerFill="WHITE" styleClass="avatar2" textFill="#ffffff00">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="221.0" layoutY="345.0" opacity="0.96" prefHeight="34.0" prefWidth="39.0" ripplerFill="WHITE" styleClass="avatar3" textFill="#ffffff00">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="281.0" layoutY="345.0" opacity="0.96" prefHeight="34.0" prefWidth="39.0" ripplerFill="WHITE" styleClass="avatar4" textFill="#ffffff00">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="554.0" layoutY="345.0" opacity="0.96" prefHeight="34.0" prefWidth="39.0" ripplerFill="WHITE" styleClass="comp" textFill="#ffffff00" />
+   </children>
+</AnchorPane>
