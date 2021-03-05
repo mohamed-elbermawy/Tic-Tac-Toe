@@ -36,12 +36,12 @@
                   <Font name="Gill Sans MT Bold" size="41.0" />
                </font>
             </Button>
-            <Button id="b2" fx:id="b2" layoutX="83.0" mnemonicParsing="false" onAction="#b2pressed" prefHeight="93.0" prefWidth="98.0" style="-fx-background-color: transparent; -fx-border-width: 2;" textFill="#e0930b">
+            <Button id="b2" fx:id="b2" layoutX="83.0" mnemonicParsing="false" onAction="#b2pressed" prefHeight="93.0" prefWidth="98.0" style="-fx-background-color: transparent; -fx-border-width: 2;" textFill="#de2f0b">
                <font>
                   <Font name="Gill Sans MT Bold" size="41.0" />
                </font>
             </Button>
-            <Button id="b5" fx:id="b5" layoutX="85.0" layoutY="87.0" mnemonicParsing="false" onAction="#b5pressed" prefHeight="93.0" prefWidth="98.0" style="-fx-background-color: transparent; -fx-border-width: 2;" textFill="#e0930b">
+            <Button id="b5" fx:id="b5" layoutX="85.0" layoutY="87.0" mnemonicParsing="false" onAction="#b5pressed" prefHeight="93.0" prefWidth="98.0" style="-fx-background-color: transparent; -fx-border-width: 2;" textFill="#de180b">
                <font>
                   <Font name="Gill Sans MT Bold" size="41.0" />
                </font>
@@ -61,7 +61,7 @@
                   <Font name="Gill Sans MT Bold" size="41.0" />
                </font>
             </Button>
-            <Button id="b3" fx:id="b3" layoutX="183.0" mnemonicParsing="false" onAction="#b3pressed" prefHeight="93.0" prefWidth="98.0" style="-fx-background-color: transparent; -fx-border-width: 2;" textFill="#e0930b">
+            <Button id="b3" fx:id="b3" layoutX="183.0" mnemonicParsing="false" onAction="#b3pressed" prefHeight="93.0" prefWidth="98.0" style="-fx-background-color: transparent; -fx-border-width: 2;" textFill="#de0b0b">
                <font>
                   <Font name="Gill Sans MT Bold" size="41.0" />
                </font>
