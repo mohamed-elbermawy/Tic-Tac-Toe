@@ -5,8 +5,12 @@
  */
 package tictactoe;
 
+import com.jfoenix.controls.JFXButton;
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 
 /**
@@ -19,6 +23,23 @@ public class SingleController implements Initializable {
     /**
      * Initializes the controller class.
      */
+    private Redirection redirect = new Redirection();
+    @FXML
+    private JFXButton playBtn;
+
+    @FXML
+    private JFXButton backBtn;
+
+    @FXML
+    void back(ActionEvent event) throws IOException {
+        redirect.redirction("GameLevels.fxml", event);
+    }
+
+    @FXML
+    void play(ActionEvent event) throws IOException {
+        redirect.redirction("PlayingWithComp.fxml", event);
+    }
+    
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO

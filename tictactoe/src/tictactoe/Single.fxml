@@ -10,7 +10,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane id="AnchorPane" prefHeight="550.0" prefWidth="800.0" styleClass="bodybg" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tictactoe.SingleController">
+<AnchorPane id="AnchorPane" prefHeight="550.0" prefWidth="800.0" styleClass="bodybg" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tictactoe.SingleController">
    <children>
       <Text layoutX="160.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="player" wrappingWidth="121.33676147460938">
          <font>
@@ -37,7 +37,7 @@
          </effect>
       </Text>
       <TextField layoutX="95.0" layoutY="296.0" prefHeight="34.0" prefWidth="238.0" promptText="Enter you name" />
-      <JFXButton buttonType="RAISED" layoutX="325.0" layoutY="416.0" prefHeight="34.0" prefWidth="149.0" style="-fx-border-color: #f0e54d; -fx-border-width: 3px; -fx-border-radius: 25%;" text="play">
+      <JFXButton fx:id="playBtn" buttonType="RAISED" layoutX="458.0" layoutY="416.0" onAction="#play" prefHeight="34.0" prefWidth="149.0" style="-fx-border-color: #f0e54d; -fx-border-width: 3px; -fx-border-radius: 25%;" text="play">
          <font>
             <Font name="Showcard Gothic" size="26.0" />
          </font>
@@ -172,5 +172,21 @@
          </cursor>
       </JFXButton>
       <JFXButton buttonType="RAISED" layoutX="554.0" layoutY="345.0" opacity="0.96" prefHeight="34.0" prefWidth="39.0" ripplerFill="WHITE" styleClass="comp" textFill="#ffffff00" />
+      <JFXButton fx:id="backBtn" buttonType="RAISED" layoutX="217.0" layoutY="417.0" onAction="#back" prefHeight="34.0" prefWidth="149.0" style="-fx-border-color: #f0e54d; -fx-border-width: 3px; -fx-border-radius: 25%;" text="back">
+         <font>
+            <Font name="Showcard Gothic" size="26.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.46000001695421" centerY="0.8206106997628249" focusDistance="0.42056077440208384" radius="0.752336475336663">
+               <stops>
+                  <Stop color="#ea7426" />
+                  <Stop color="#f0e54d" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
    </children>
 </AnchorPane>

@@ -6,8 +6,12 @@
 package tictactoe;
 
 import java.io.IOException;
+import java.io.PrintWriter;
+import static java.lang.Boolean.parseBoolean;
+import java.net.Socket;
 import java.net.URL;
 import java.util.ResourceBundle;
+import java.util.Scanner;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -19,7 +23,7 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
-
+import tictactoe.App;
 /**
  * FXML Controller class
  *
@@ -31,8 +35,10 @@ public class SignUpController implements Initializable {
      * Initializes the controller class.
      */
     private Redirection redirect = new Redirection();
-    private SqlHandler sql;
     private Alert alert;
+    private Scanner in;
+    private PrintWriter out;
+    private Socket socket;
 
     @FXML
     private TextField username;
@@ -56,7 +62,6 @@ public class SignUpController implements Initializable {
 
     @FXML
     void signUpProccess(ActionEvent event) throws IOException {
-        sql = new SqlHandler();
         if (username.getText().isEmpty() || password.getText().isEmpty() || confirmPassword.getText().isEmpty()) {
             alert = new Alert(Alert.AlertType.ERROR);
             alert.setHeaderText("Enter Your Data");
@@ -64,7 +69,7 @@ public class SignUpController implements Initializable {
             return;
         } else {
             if (password.getText().equals(confirmPassword.getText())) {
-                if (sql.signUp(username.getText().toString(), password.getText().toString())) {
+                if (signUp(username.getText().toString(), password.getText().toString())) {
                     alert = new Alert(Alert.AlertType.CONFIRMATION);
                     alert.setHeaderText("Registered sucessfully");
                     alert.showAndWait();
@@ -83,10 +88,25 @@ public class SignUpController implements Initializable {
         }
         redirect.redirction("Login.fxml", event);
     }
+    
+    boolean signUp(String username,String password){
+        boolean line;
+        out.println("register");
+        out.println(username + "," + password);
+        line = parseBoolean(in.nextLine());
+        return line;
+    }
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
+//        try {
+//            Socket socket = new Socket("localhost", 5005);
+//            in = new Scanner(socket.getInputStream());
+//            out = new PrintWriter(socket.getOutputStream(), true);
+//        } catch (Exception e) {
+//            System.out.println(e);
+//        }
     }
 
 }

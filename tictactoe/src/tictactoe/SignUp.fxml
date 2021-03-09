@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.effect.DropShadow?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -60,7 +61,6 @@
             <DropShadow />
          </effect>
       </Text>
-      <TextField fx:id="password" layoutX="400.0" layoutY="258.0" prefHeight="34.0" prefWidth="251.0" promptText="password" />
       <Text layoutX="128.0" layoutY="356.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Confirm Password" wrappingWidth="264.5367126464844">
          <font>
             <Font name="Showcard Gothic" size="26.0" />
@@ -85,7 +85,6 @@
             <DropShadow />
          </effect>
       </Text>
-      <TextField fx:id="confirmPassword" layoutX="400.0" layoutY="332.0" prefHeight="34.0" prefWidth="251.0" promptText="confirm password" />
       <JFXButton fx:id="registerSignUpBtn" buttonType="RAISED" layoutX="431.0" layoutY="424.0" onAction="#signUpProccess" prefHeight="34.0" prefWidth="149.0" style="-fx-border-color: #f0e54d; -fx-border-width: 3px; -fx-border-radius: 25%;" text="Sign Up">
          <font>
             <Font name="Showcard Gothic" size="26.0" />
@@ -136,5 +135,7 @@
             </RadialGradient>
          </textFill>
       </JFXButton>
+      <PasswordField fx:id="password" layoutX="400.0" layoutY="259.0" prefHeight="34.0" prefWidth="251.0" promptText="Password" />
+      <PasswordField fx:id="confirmPassword" layoutX="400.0" layoutY="329.0" prefHeight="34.0" prefWidth="251.0" promptText="Confirm Password" />
    </children>
 </AnchorPane>
