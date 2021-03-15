@@ -14,6 +14,7 @@ import java.io.PrintWriter;
 class User {
     String name;
     PrintWriter out;
+    public Boolean isFree = true;
 
     public User(String givenName, PrintWriter givenOut) {
         name = givenName;

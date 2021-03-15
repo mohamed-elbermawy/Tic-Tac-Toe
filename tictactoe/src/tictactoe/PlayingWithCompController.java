@@ -5,6 +5,7 @@
  */
 package tictactoe;
 
+import com.jfoenix.controls.JFXButton;
 import java.util.*;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -25,12 +26,12 @@ import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.ComboBox;
+import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.text.Font;
 import javafx.stage.Stage;
-
 
 /**
  * FXML Controller class
@@ -38,7 +39,6 @@ import javafx.stage.Stage;
  * @author i
  */
 public class PlayingWithCompController implements Initializable {
-
 
     Image x = new Image("assets/x_1.png");
     Image o = new Image("assets/o_1.png");
@@ -51,9 +51,16 @@ public class PlayingWithCompController implements Initializable {
     int[] clickChecker = new int[]{1, 1, 1, 1, 1, 1, 1, 1, 1};
     int[] playerPosition = new int[]{0, 0, 0, 0, 0, 0, 0, 0, 0};
     private char[][] gameBoard = {{' ', ' ', ' '}, {' ', ' ', ' '}, {' ', ' ', ' '}};
-    int flag=1;
+    int flag = 1;
     int counter = 0;
 
+    @FXML
+    private JFXButton playBtn;
+
+    @FXML
+    private JFXButton stopBtn;
+    @FXML
+    private Label playerName;
     @FXML
     private ImageView topleft;
     @FXML
@@ -77,20 +84,16 @@ public class PlayingWithCompController implements Initializable {
     @FXML
     private Font x1;
 
-
-
     public void computerMove() {
         System.out.println("hen fe computermove ");
 
-      Random rgen = new Random();              // Computer
+        Random rgen = new Random();              // Computer
 
-
-       if (rgen.nextBoolean()) {  // sometimes blocks when easy
+        if (rgen.nextBoolean()) {  // sometimes blocks when easy
             if (blockWin()) {
-               return;
+                return;
             }
-       }
-
+        }
 
         if (playOppositeCorner()) {
             return;
@@ -103,7 +106,6 @@ public class PlayingWithCompController implements Initializable {
     }
 
     // Plays an empty corner and returns true if move is made.
-
     private boolean playEmptyCorner() {
         System.out.println("hen fe playempty momken return false");
         if (gameBoard[0][0] == ' ') {
@@ -186,13 +188,10 @@ public class PlayingWithCompController implements Initializable {
         return false;
     }
 
-
-
     private boolean blockWin() {
         System.out.println("hen fe blockwin ");
         return false;
     }
-
 
     public void makeMoveInSquare(int row, int col) {  //hena h3ml nestedloop check beha 3la el makan elly el mafrod a7d feh el img bt3ati
         System.out.println("hen fe makeMoveInSquare ");
@@ -236,7 +235,6 @@ public class PlayingWithCompController implements Initializable {
             bottomright.setImage(setImage());
         }
     }
-
 
     private Image setImage() {
 
@@ -302,12 +300,11 @@ public class PlayingWithCompController implements Initializable {
         } catch (Exception e) {
             System.out.println("error in reset");
         }
-    flag=0;
+        flag = 0;
     }
 
     private void winningGame() {
         System.out.println("win check  " + counter);
-        
 
         Image b1 = topleft.getImage();
         Image b2 = topcenter.getImage();
@@ -325,8 +322,7 @@ public class PlayingWithCompController implements Initializable {
             if (b1 == x && b2 == x && b3 == x) {
                 xCount++;
                 alertMsg("X");
-                 
-       
+
                 reset();
 
                 //   gameScore();
@@ -334,42 +330,42 @@ public class PlayingWithCompController implements Initializable {
 
                 xCount++;
                 alertMsg("X");
-               
+
                 reset();
 
-           //gameScore();
+                //gameScore();
             } else if (b7 == x && b8 == x && b9 == x) {
                 xCount++;
                 alertMsg("X");
-                 
+
                 reset();
 
                 //gameScore();
             } else if (b1 == x && b4 == x && b7 == x) {
                 xCount++;
                 alertMsg("X");
-                  
+
                 reset();
 
                 //gameScore();
             } else if (b2 == x && b5 == x && b8 == x) {
                 xCount++;
                 alertMsg("X");
-                 
+
                 reset();
 
                 //gameScore();
             } else if (b3 == x && b6 == x && b9 == x) {
                 xCount++;
                 alertMsg("X");
-                 
+
                 reset();
 
                 //gameScore();
             } else if (b1 == x && b5 == x && b9 == x) {
                 xCount++;
                 alertMsg("X");
-                 
+
                 reset();
                 //gameScore();
             } else if (b3 == x && b5 == x && b7 == x) {
@@ -452,7 +448,7 @@ public class PlayingWithCompController implements Initializable {
                 computerMove();
                 winningGame();
             }
-            flag=1;
+            flag = 1;
         }
 
     }
@@ -474,7 +470,7 @@ public class PlayingWithCompController implements Initializable {
                 computerMove();
                 winningGame();
             }
-            flag=1;
+            flag = 1;
         }
 
     }
@@ -496,7 +492,7 @@ public class PlayingWithCompController implements Initializable {
                 computerMove();
                 winningGame();
             }
-            flag=1;
+            flag = 1;
         }
 
     }
@@ -518,7 +514,7 @@ public class PlayingWithCompController implements Initializable {
                 computerMove();
                 winningGame();
             }
-            flag=1;
+            flag = 1;
         }
 
     }
@@ -540,7 +536,7 @@ public class PlayingWithCompController implements Initializable {
                 computerMove();
                 winningGame();
             }
-            flag=1;
+            flag = 1;
         }
 
     }
@@ -562,7 +558,7 @@ public class PlayingWithCompController implements Initializable {
                 computerMove();
                 winningGame();
             }
-            flag=1;
+            flag = 1;
         }
 
     }
@@ -584,7 +580,7 @@ public class PlayingWithCompController implements Initializable {
                 computerMove();
                 winningGame();
             }
-            flag=1;
+            flag = 1;
         }
 
     }
@@ -606,7 +602,7 @@ public class PlayingWithCompController implements Initializable {
                 computerMove();
                 winningGame();
             }
-            flag=1;
+            flag = 1;
         }
 
     }
@@ -628,14 +624,29 @@ public class PlayingWithCompController implements Initializable {
                 computerMove();
                 winningGame();
             }
-            flag=1;
+            flag = 1;
 
         }
     }
 
-    @Override
-    public void initialize(URL url, ResourceBundle rb) {
+    @FXML
+    void play(ActionEvent event) {
+        tictactoe.Tictactoe.mediaPlayer.play();
+        playBtn.setVisible(false);
+        stopBtn.setVisible(true);
     }
 
+    @FXML
+    void stop(ActionEvent event) {
+        tictactoe.Tictactoe.mediaPlayer.stop();
+        playBtn.setVisible(true);
+        stopBtn.setVisible(false);
+    }
+
+    @Override
+    public void initialize(URL url, ResourceBundle rb) {
+        System.out.println(SingleController.playername);
+        playerName.setText(SingleController.playername);
+    }
 
 }

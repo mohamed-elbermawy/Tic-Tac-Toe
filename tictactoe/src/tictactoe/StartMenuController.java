@@ -50,15 +50,13 @@ public class StartMenuController implements Initializable {
     }
     
     @FXML
-    void signUp(ActionEvent event) throws IOException {
-        //redirect.redirction("SignUp.fxml", event);
+    void history(ActionEvent event) throws IOException {
+        //redirect.redirction("history.fxml", event);
     }
 
     @FXML
-    void setting(ActionEvent event) {
-       aler = new Alert(Alert.AlertType.CONFIRMATION);
-       aler.setContentText("Settings");
-       aler.show();
+    void setting(ActionEvent event) throws IOException {
+        redirect.redirction("Settings.fxml", event);
     }
     
     @FXML

@@ -190,7 +190,7 @@ public class NewClass implements Initializable {
 //            label.setText("O turn");
 //        }
         // Record game
-        String sequence = "5,1,0,4,6";
+        
 //        new Thread() {
 //            @Override
 //            public void run() {
@@ -223,6 +223,10 @@ public class NewClass implements Initializable {
 //            }
 
 //        }.start();
+
+
+        
+        String sequence = "5,1,0,4,6";
         Platform.runLater(new Thread() {
             public void run() {
                 String[] arr;
@@ -232,8 +236,7 @@ public class NewClass implements Initializable {
                     if (i % 2 == 0) {
                         try {
                             buttons[x].setText("X");
-                            this.sleep(5000);
-                            System.out.println(Thread.currentThread().getName());
+                            sleep(5000);
                         } catch (InterruptedException ex) {
                             Logger.getLogger(NewClass.class.getName()).log(Level.SEVERE, null, ex);
                         }

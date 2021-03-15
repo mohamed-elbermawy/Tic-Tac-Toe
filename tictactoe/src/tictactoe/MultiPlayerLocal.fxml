@@ -53,8 +53,6 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </JFXButton>
-      <JFXButton buttonType="RAISED" layoutX="617.0" layoutY="54.0" opacity="0.96" prefHeight="34.0" prefWidth="39.0" ripplerFill="WHITE" styleClass="volume" textFill="#ffffff00" />
-      <JFXButton buttonType="RAISED" layoutX="687.0" layoutY="54.0" opacity="0.96" prefHeight="34.0" prefWidth="39.0" ripplerFill="WHITE" styleClass="mute" textFill="#ffffff00" />
       <Text layoutX="496.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="player-2" wrappingWidth="172.53671264648438">
          <font>
             <Font name="Showcard Gothic" size="30.0" />
@@ -151,47 +149,7 @@
             <DropShadow />
          </effect>
       </Text>
-      <JFXButton buttonType="RAISED" layoutX="106.0" layoutY="345.0" opacity="0.96" prefHeight="35.0" prefWidth="39.0" ripplerFill="WHITE" styleClass="avatar1" textFill="#ffffff00">
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor>
-      </JFXButton>
-      <JFXButton buttonType="RAISED" layoutX="166.0" layoutY="345.0" opacity="0.96" prefHeight="35.0" prefWidth="39.0" ripplerFill="WHITE" styleClass="avatar2" textFill="#ffffff00">
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor>
-      </JFXButton>
-      <JFXButton buttonType="RAISED" layoutX="221.0" layoutY="345.0" opacity="0.96" prefHeight="34.0" prefWidth="39.0" ripplerFill="WHITE" styleClass="avatar3" textFill="#ffffff00">
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor>
-      </JFXButton>
-      <JFXButton buttonType="RAISED" layoutX="281.0" layoutY="345.0" opacity="0.96" prefHeight="34.0" prefWidth="39.0" ripplerFill="WHITE" styleClass="avatar4" text="Button" textFill="#ffffff00">
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor>
-      </JFXButton>
       <TextField fx:id="playerTwoName" layoutX="454.0" layoutY="296.0" prefHeight="34.0" prefWidth="238.0" promptText="Enter you name" />
-      <JFXButton buttonType="RAISED" layoutX="466.0" layoutY="345.0" opacity="0.96" prefHeight="35.0" prefWidth="39.0" ripplerFill="WHITE" styleClass="avatar5" textFill="#ffffff00">
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor>
-      </JFXButton>
-      <JFXButton buttonType="RAISED" layoutX="526.0" layoutY="345.0" opacity="0.96" prefHeight="35.0" prefWidth="39.0" ripplerFill="WHITE" styleClass="avatar6" textFill="#ffffff00">
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor>
-      </JFXButton>
-      <JFXButton buttonType="RAISED" layoutX="581.0" layoutY="345.0" opacity="0.96" prefHeight="34.0" prefWidth="39.0" ripplerFill="WHITE" styleClass="avatar7" textFill="#ffffff00">
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor>
-      </JFXButton>
-      <JFXButton buttonType="RAISED" layoutX="641.0" layoutY="345.0" opacity="0.96" prefHeight="34.0" prefWidth="39.0" ripplerFill="WHITE" styleClass="avatar8" text="Button" textFill="#ffffff00">
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor>
-      </JFXButton>
       <JFXButton fx:id="back" buttonType="RAISED" layoutX="219.0" layoutY="416.0" onAction="#backProcess" prefHeight="34.0" prefWidth="149.0" style="-fx-border-color: #f0e54d; -fx-border-width: 3px; -fx-border-radius: 25%;" text="back">
          <font>
             <Font name="Showcard Gothic" size="26.0" />

@@ -12,6 +12,7 @@ import java.awt.GridLayout;
 import java.net.URL;
 import java.util.Random;
 import java.util.ResourceBundle;
+import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
@@ -20,6 +21,8 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.text.FontWeight;
 import javafx.scene.text.Font;
 import javafx.stage.Stage;
@@ -32,7 +35,16 @@ public class TwoPlayersLocalPlayController implements Initializable{
      
     @FXML
     private Label label;
+    
+    @FXML
+    private Label playerOneName;
 
+    @FXML
+    private Label playerTwoName;
+    
+    @FXML
+    private ImageView avaterContainer;
+    
     @FXML
     private Button btn0;
 
@@ -300,7 +312,10 @@ public class TwoPlayersLocalPlayController implements Initializable{
         buttons[6]= btn6 ;
         buttons[7]= btn7 ;
         buttons[8]= btn8 ;
-       
+        System.out.println(MultiplayerLocalController.playerOne);
+        System.out.println(MultiplayerLocalController.playerTwo);
+        
         firstTurn();
+        
     }
 }

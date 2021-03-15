@@ -100,13 +100,13 @@ public class SignUpController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
-//        try {
-//            Socket socket = new Socket("localhost", 5005);
-//            in = new Scanner(socket.getInputStream());
-//            out = new PrintWriter(socket.getOutputStream(), true);
-//        } catch (Exception e) {
-//            System.out.println(e);
-//        }
+        try {
+            Socket socket = new Socket("localhost", 5005);
+            in = new Scanner(socket.getInputStream());
+            out = new PrintWriter(socket.getOutputStream(), true);
+        } catch (Exception e) {
+            System.out.println(e);
+        }
     }
 
 }

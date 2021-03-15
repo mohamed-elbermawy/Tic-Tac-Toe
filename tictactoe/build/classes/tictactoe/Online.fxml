@@ -11,9 +11,9 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane id="AnchorPane" prefHeight="550.0" prefWidth="800.0" styleClass="bodybg" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tictactoe.OnlineController">
+<AnchorPane id="AnchorPane" prefHeight="550.0" prefWidth="800.0" styleClass="bodybg" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tictactoe.OnlineController">
    <children>
-      <Text layoutX="341.0" layoutY="225.0" strokeType="OUTSIDE" strokeWidth="0.0" text="player" wrappingWidth="117.59999918937683">
+      <Text layoutX="306.0" layoutY="202.0" strokeType="OUTSIDE" strokeWidth="0.0" text="player" wrappingWidth="117.59999918937683">
          <font>
             <Font name="Showcard Gothic" size="30.0" />
          </font>
@@ -37,8 +37,8 @@
             <DropShadow />
          </effect>
       </Text>
-      <TextField layoutX="280.0" layoutY="250.0" prefHeight="34.0" prefWidth="238.0" promptText="Enter player name" />
-      <JFXButton buttonType="RAISED" layoutX="324.0" layoutY="321.0" prefHeight="34.0" prefWidth="149.0" style="-fx-border-color: #f0e54d; -fx-border-width: 3px; -fx-border-radius: 25%;" text="invite">
+      <TextField fx:id="playerName" layoutX="245.0" layoutY="250.0" prefHeight="34.0" prefWidth="238.0" promptText="Enter player name" />
+      <JFXButton fx:id="inviteBtn" buttonType="RAISED" layoutX="384.0" layoutY="358.0" onAction="#invite" prefHeight="34.0" prefWidth="149.0" style="-fx-border-color: #f0e54d; -fx-border-width: 3px; -fx-border-radius: 25%;" text="invite">
          <font>
             <Font name="Showcard Gothic" size="26.0" />
          </font>
@@ -54,9 +54,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </JFXButton>
-      <JFXButton buttonType="RAISED" layoutX="617.0" layoutY="54.0" opacity="0.96" prefHeight="34.0" prefWidth="39.0" ripplerFill="WHITE" styleClass="volume" textFill="#ffffff00" />
-      <JFXButton buttonType="RAISED" layoutX="687.0" layoutY="54.0" opacity="0.96" prefHeight="34.0" prefWidth="39.0" ripplerFill="WHITE" styleClass="mute" textFill="#ffffff00" />
-      <JFXTextArea labelFloat="true" layoutX="593.0" layoutY="110.0" prefHeight="391.0" prefWidth="159.0" style="-fx-border-color: #f0e54d; -fx-border-width: 4px; -fx-border-radius: 5px;" styleClass="online"/>
+      <JFXTextArea labelFloat="true" layoutX="593.0" layoutY="110.0" prefHeight="391.0" prefWidth="159.0" style="-fx-border-color: #f0e54d; -fx-border-width: 4px; -fx-border-radius: 5px;" styleClass="online" />
       <Text layoutX="619.0" layoutY="151.0" strokeType="OUTSIDE" strokeWidth="0.0" text="online" wrappingWidth="107.19997477531433">
          <font>
             <Font name="Showcard Gothic" size="30.0" />
@@ -81,5 +79,21 @@
             <DropShadow />
          </effect>
       </Text>
+      <JFXButton fx:id="backBtn" buttonType="RAISED" layoutX="203.0" layoutY="358.0" onAction="#back" prefHeight="34.0" prefWidth="149.0" style="-fx-border-color: #f0e54d; -fx-border-width: 3px; -fx-border-radius: 25%;" text="back">
+         <font>
+            <Font name="Showcard Gothic" size="26.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.46000001695421" centerY="0.8206106997628249" focusDistance="0.42056077440208384" radius="0.752336475336663">
+               <stops>
+                  <Stop color="#ea7426" />
+                  <Stop color="#f0e54d" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
    </children>
 </AnchorPane>

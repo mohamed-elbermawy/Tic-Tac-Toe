@@ -37,9 +37,9 @@ public class LoginController implements Initializable {
      */
     private Redirection redirect = new Redirection();
     private Alert alert;
-//    private Scanner in;
-//    private PrintWriter out;
-//    private Socket socket;
+    public static Scanner in;
+    public static PrintWriter out;
+    public static Socket socket;
 public App app = new App("127.0.0.1");
     @FXML
     private AnchorPane anchorPaneLogin;
@@ -72,7 +72,7 @@ public App app = new App("127.0.0.1");
             alert.show();
             return;
         } else {
-            if (parseBoolean(app.login(username.getText().toString(), password.getText().toString()))) {
+            if (login(username.getText().toString(), password.getText().toString())) {
                 redirect.redirction("StartMenu.fxml", event);
             } else {
                 alert = new Alert(Alert.AlertType.ERROR);
@@ -83,13 +83,13 @@ public App app = new App("127.0.0.1");
         }
     }
     
-//    boolean login(String username,String password){
-//        boolean line;
-//        out.println("login");
-//        out.println(username + "," + password);
-//        line = parseBoolean(in.nextLine());
-//        return line;
-//    }
+    boolean login(String username,String password){
+        boolean line;
+        out.println("login");
+        out.println(username + "," + password);
+        line = parseBoolean(in.nextLine());
+        return line;
+    }
 
     @FXML
     void signUpPage(ActionEvent event) throws IOException {
@@ -99,13 +99,13 @@ public App app = new App("127.0.0.1");
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
-//        try {
-//            socket = new Socket("localhost", 5005);
-//            in = new Scanner(socket.getInputStream());
-//            out = new PrintWriter(socket.getOutputStream(), true);
-//        } catch (Exception e) {
-//            System.out.println(e);
-//        }
+        try {
+            socket = new Socket("localhost", 5005);
+            in = new Scanner(socket.getInputStream());
+            out = new PrintWriter(socket.getOutputStream(), true);
+        } catch (Exception e) {
+            System.out.println(e);
+        }
 //        app = new App("127.0.0.1");
     }
 

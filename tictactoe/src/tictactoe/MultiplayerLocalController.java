@@ -12,6 +12,7 @@ import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 
 /**
@@ -26,11 +27,18 @@ public class MultiplayerLocalController implements Initializable {
      */
     Redirection redirect = new Redirection();
     
+    public static int avaterId;
+    public static String playerOne;
+    public static String playerTwo;
+    
     @FXML
     private TextField playerOneName;
 
     @FXML
     private JFXButton play;
+    
+    @FXML
+    private JFXButton one;
 
     @FXML
     private TextField playerTwoName;
@@ -45,7 +53,19 @@ public class MultiplayerLocalController implements Initializable {
 
     @FXML
     void playProcess(ActionEvent event) throws IOException {
+        playerOne = playerOneName.getText();
+        playerTwo = playerTwoName.getText();
         redirect.redirction("TwoPlayersLocalPlay.fxml", event);
+    }
+    
+        @FXML
+    void avater(ActionEvent event) {
+         //avaterId = (int) event.getSource();
+            if (event.getSource() == one) {
+                avaterId = 1;
+                System.out.println(avaterId);
+            }
+//            System.out.println(event.getSource());
     }
     
     @Override

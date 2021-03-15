@@ -12,6 +12,7 @@ import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.TextField;
 
 /**
  * FXML Controller class
@@ -23,6 +24,12 @@ public class SingleController implements Initializable {
     /**
      * Initializes the controller class.
      */
+    
+    public static String playername;
+    
+     @FXML
+    private TextField playerName;
+    
     private Redirection redirect = new Redirection();
     @FXML
     private JFXButton playBtn;
@@ -37,6 +44,8 @@ public class SingleController implements Initializable {
 
     @FXML
     void play(ActionEvent event) throws IOException {
+        playername = playerName.getText();
+        System.out.println(playername);
         redirect.redirction("PlayingWithComp.fxml", event);
     }
     

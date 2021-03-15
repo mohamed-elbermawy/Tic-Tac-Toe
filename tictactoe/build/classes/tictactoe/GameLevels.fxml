@@ -88,7 +88,5 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </JFXButton>
-      <JFXButton buttonType="RAISED" layoutX="607.0" layoutY="44.0" opacity="0.96" prefHeight="34.0" prefWidth="39.0" ripplerFill="WHITE" styleClass="volume" textFill="#ffffff00" />
-      <JFXButton buttonType="RAISED" layoutX="677.0" layoutY="44.0" opacity="0.96" prefHeight="34.0" prefWidth="39.0" ripplerFill="WHITE" styleClass="mute" textFill="#ffffff00" />
    </children>
 </AnchorPane>
