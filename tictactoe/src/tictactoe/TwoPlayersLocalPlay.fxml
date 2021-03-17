@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tictactoe.TwoPlayersLocalPlayController">
+   <children>
+      <ImageView fitHeight="508.0" fitWidth="700.0" layoutY="-1.0" pickOnBounds="true" styleClass="btn">
+         <image>
+            <Image url="@img/template.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="playerOneName" layoutX="143.0" layoutY="25.0" text="Player1">
+         <textFill>
+            <RadialGradient centerX="0.31333334181043837" centerY="0.8206106906628791" radius="0.75">
+               <stops>
+                  <Stop color="#ea7426" />
+                  <Stop color="#f0e54d" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+         <font>
+            <Font name="Showcard Gothic" size="14.0" />
+         </font></Label>
+      <Label fx:id="playerTwoName" layoutX="506.0" layoutY="27.0" text="Player2">
+         <textFill>
+            <RadialGradient centerX="0.31333334181043837" centerY="0.8206106906628791" radius="0.75">
+               <stops>
+                  <Stop color="#ea7426" />
+                  <Stop color="#f0e54d" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+         <font>
+            <Font name="Showcard Gothic" size="14.0" />
+         </font></Label>
+      <ImageView fitHeight="46.0" fitWidth="49.0" layoutX="45.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/avatar/2.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="46.0" fitWidth="49.0" layoutX="608.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/avatar/1.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="playerOneName1" layoutX="343.0" layoutY="28.0" text="vs">
+         <textFill>
+            <RadialGradient centerX="0.31333334181043837" centerY="0.8206106906628791" radius="0.75">
+               <stops>
+                  <Stop color="#ea7426" />
+                  <Stop color="#f0e54d" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+         <font>
+            <Font name="Showcard Gothic" size="14.0" />
+         </font>
+      </Label>
+      <Line endX="150.0" endY="0.0" layoutX="352.0" layoutY="216.0" startX="-130.0" stroke="WHITE" strokeWidth="7.0" />
+      <Line endX="150.0" endY="0.0" layoutX="352.0" layoutY="310.0" startX="-130.0" stroke="WHITE" strokeWidth="7.0" />
+      <Line endX="-65.0" endY="75.0" layoutX="377.0" layoutY="310.0" startX="-65.0" startY="-170.0" stroke="WHITE" strokeWidth="7.0" />
+      <Line endX="-65.0" endY="75.0" layoutX="473.0" layoutY="310.0" startX="-65.0" startY="-170.0" stroke="WHITE" strokeWidth="7.0" />
+      <JFXButton fx:id="playBtn" buttonType="RAISED" layoutX="615.0" layoutY="123.0" onAction="#play" opacity="0.96" prefHeight="34.0" prefWidth="39.0" ripplerFill="WHITE" styleClass="volume" stylesheets="@css/menu-background.css" text="play" textFill="#ffffff00" />
+      <JFXButton fx:id="stopBtn" buttonType="RAISED" layoutX="615.0" layoutY="188.0" onAction="#stop" opacity="0.96" prefHeight="34.0" prefWidth="39.0" ripplerFill="WHITE" styleClass="mute" stylesheets="@css/menu-background.css" text="stop" textFill="#ffffff00" />
+      <JFXButton fx:id="backBtn" buttonType="RAISED" layoutX="615.0" layoutY="252.0" onAction="#back" opacity="0.96" prefHeight="34.0" prefWidth="39.0" ripplerFill="WHITE" styleClass="home" stylesheets="@css/menu-background.css" text="home" textFill="#ffffff00" />
+      <JFXButton fx:id="btn2" layoutX="413.0" layoutY="135.0" minHeight="10.0" onAction="#handleButtonAction" prefHeight="77.0" prefWidth="90.0" text="x" textFill="WHITE">
+         <font>
+            <Font name="Showcard Gothic" size="30.0" />
+         </font></JFXButton>
+      <JFXButton fx:id="btn1" layoutX="314.0" layoutY="135.0" minHeight="10.0" onAction="#handleButtonAction" prefHeight="77.0" prefWidth="90.0" text="x" textFill="WHITE">
+         <font>
+            <Font name="Showcard Gothic" size="30.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btn0" layoutX="218.0" layoutY="136.0" minHeight="10.0" onAction="#handleButtonAction" prefHeight="77.0" prefWidth="90.0" text="x" textFill="WHITE">
+         <font>
+            <Font name="Showcard Gothic" size="30.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btn5" layoutX="413.0" layoutY="223.0" minHeight="10.0" onAction="#handleButtonAction" prefHeight="77.0" prefWidth="90.0" text="x" textFill="WHITE">
+         <font>
+            <Font name="Showcard Gothic" size="30.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btn4" layoutX="314.0" layoutY="223.0" minHeight="10.0" onAction="#handleButtonAction" prefHeight="77.0" prefWidth="90.0" text="x" textFill="WHITE">
+         <font>
+            <Font name="Showcard Gothic" size="30.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btn3" layoutX="218.0" layoutY="224.0" minHeight="10.0" onAction="#handleButtonAction" prefHeight="77.0" prefWidth="90.0" text="x" textFill="WHITE">
+         <font>
+            <Font name="Showcard Gothic" size="30.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btn8" layoutX="414.0" layoutY="313.0" minHeight="10.0" onAction="#handleButtonAction" prefHeight="77.0" prefWidth="90.0" text="x" textFill="WHITE">
+         <font>
+            <Font name="Showcard Gothic" size="30.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btn7" layoutX="315.0" layoutY="313.0" minHeight="10.0" onAction="#handleButtonAction" prefHeight="77.0" prefWidth="90.0" text="x" textFill="WHITE">
+         <font>
+            <Font name="Showcard Gothic" size="30.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btn6" layoutX="219.0" layoutY="314.0" minHeight="10.0" onAction="#handleButtonAction" prefHeight="77.0" prefWidth="90.0" text="x" textFill="WHITE">
+         <font>
+            <Font name="Showcard Gothic" size="30.0" />
+         </font>
+      </JFXButton>
+      <Label fx:id="playerscore" layoutX="150.0" layoutY="50.0" text="0">
+         <textFill>
+            <RadialGradient centerX="0.31333334181043837" centerY="0.8206106906628791" radius="0.75">
+               <stops>
+                  <Stop color="#ea7426" />
+                  <Stop color="#f0e54d" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+         <font>
+            <Font name="Showcard Gothic" size="14.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="18.0" fitWidth="27.0" layoutX="170.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/11.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

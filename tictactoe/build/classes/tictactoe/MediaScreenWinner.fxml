@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.media.MediaView?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/9.0.1" fx:controller="tictactoe.MediaScreenWinnerController">
+   <children>
+      <MediaView fx:id="mediaplyer" fitHeight="300.0" fitWidth="600.0" preserveRatio="false" />
+      <ImageView fitHeight="100.0" fitWidth="600.0" layoutY="300.0" pickOnBounds="true">
+         <image>
+            <Image url="@img/btn.jpg" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="backBtn" buttonType="RAISED" layoutX="508.0" layoutY="333.0" onAction="#back" opacity="0.96" prefHeight="34.0" prefWidth="39.0" ripplerFill="WHITE" styleClass="home" stylesheets="@css/menu-background.css" text="home" textFill="#ffffff00" />
+      <Label fx:id="winner" layoutX="53.0" layoutY="338.0" prefHeight="28.0" prefWidth="405.0" text="winner winner chicken dinner">
+         <textFill>
+            <RadialGradient centerX="0.31333334181043837" centerY="0.8206106906628791" radius="0.75">
+               <stops>
+                  <Stop color="#ea7426" />
+                  <Stop color="#f0e54d" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+         <font>
+            <Font name="Showcard Gothic" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

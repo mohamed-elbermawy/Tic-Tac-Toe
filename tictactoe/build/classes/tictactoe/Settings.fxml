@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorPaneLogin" prefHeight="550.0" prefWidth="800.0" styleClass="bodybg" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tictactoe.SettingsController">
+   <children>
+      <Text layoutX="128.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Play" wrappingWidth="172.53671264648438">
+         <font>
+            <Font name="Showcard Gothic" size="30.0" />
+         </font>
+         <fill>
+            <RadialGradient centerX="0.46000001695421" centerY="0.8206106997628249" radius="0.752336475336663">
+               <stops>
+                  <Stop color="#ea7426" />
+                  <Stop color="#f0e54d" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </fill>
+         <stroke>
+            <RadialGradient centerX="0.46000001695421" centerY="0.8206106997628249" focusDistance="0.42056077440208384" radius="0.752336475336663">
+               <stops>
+                  <Stop color="#ea7426" />
+                  <Stop color="#f0e54d" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </stroke>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Text>
+      <Text layoutX="128.0" layoutY="284.0" strokeType="OUTSIDE" strokeWidth="0.0" text="STop" wrappingWidth="172.53671264648438">
+         <font>
+            <Font name="Showcard Gothic" size="30.0" />
+         </font>
+         <fill>
+            <RadialGradient centerX="0.46000001695421" centerY="0.8206106997628249" radius="0.752336475336663">
+               <stops>
+                  <Stop color="#ea7426" />
+                  <Stop color="#f0e54d" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </fill>
+         <stroke>
+            <RadialGradient centerX="0.46000001695421" centerY="0.8206106997628249" focusDistance="0.42056077440208384" radius="0.752336475336663">
+               <stops>
+                  <Stop color="#ea7426" />
+                  <Stop color="#f0e54d" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </stroke>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Text>
+      <Text layoutX="302.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sound" wrappingWidth="183.59999918937683">
+         <font>
+            <Font name="Showcard Gothic" size="50.0" />
+         </font>
+         <fill>
+            <RadialGradient centerX="0.46000001695421" centerY="0.8206106997628249" radius="0.752336475336663">
+               <stops>
+                  <Stop color="#ea7426" />
+                  <Stop color="#f0e54d" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </fill>
+         <stroke>
+            <RadialGradient centerX="0.46000001695421" centerY="0.8206106997628249" focusDistance="0.42056077440208384" radius="0.752336475336663">
+               <stops>
+                  <Stop color="#ea7426" />
+                  <Stop color="#f0e54d" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </stroke>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Text>
+      <JFXButton fx:id="backBtn" buttonType="RAISED" layoutX="321.0" layoutY="351.0" onAction="#back" prefHeight="34.0" prefWidth="149.0" style="-fx-border-color: red; -fx-border-width: 3px; -fx-border-radius: 25%;" text="Back">
+         <font>
+            <Font name="Showcard Gothic" size="26.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.46000001695421" centerY="0.8206106997628249" focusDistance="0.42056077440208384" radius="0.752336475336663">
+               <stops>
+                  <Stop color="#ea7426" />
+                  <Stop color="#f0e54d" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="playBtn" buttonType="RAISED" layoutX="374.0" layoutY="185.0" onAction="#play" opacity="0.96" prefHeight="34.0" prefWidth="39.0" ripplerFill="WHITE" styleClass="volume" text="play" textFill="#ffffff00" />
+      <JFXButton fx:id="stopBtn" buttonType="RAISED" layoutX="381.0" layoutY="256.0" onAction="#stop" opacity="0.96" prefHeight="34.0" prefWidth="39.0" ripplerFill="WHITE" styleClass="mute" text="stop" textFill="#ffffff00" />
+   </children>
+</AnchorPane>

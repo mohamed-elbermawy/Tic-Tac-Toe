@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="700.0" style=" -fx-background-image:url('file:src/XO/xo.jpg'); -fx-background-size: 100% 100%; " xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tictactoe.PlayingWithCompController">
+  <children>
+      <ImageView fitHeight="500.0" fitWidth="700.0" pickOnBounds="true" smooth="false">
+         <image>
+            <Image url="@img/template.jpg" />
+         </image>
+      </ImageView>
+    <Line endX="150.0" endY="0.0" layoutX="342.0" layoutY="206.0" startX="-130.0" stroke="WHITE" strokeWidth="7.0" />
+    <Line endX="150.0" endY="0.0" layoutX="342.0" layoutY="300.0" startX="-130.0" stroke="WHITE" strokeWidth="7.0" />
+    <Line endX="-65.0" endY="75.0" layoutX="367.0" layoutY="300.0" startX="-65.0" startY="-170.0" stroke="WHITE" strokeWidth="7.0" />
+    <Line endX="-65.0" endY="75.0" layoutX="463.0" layoutY="300.0" startX="-65.0" startY="-170.0" stroke="WHITE" strokeWidth="7.0" />
+    <ImageView id="topLeft" fx:id="topleft" fitHeight="73.0" fitWidth="84.0" layoutX="212.0" layoutY="127.0" onMouseClicked="#drawTopLeft" pickOnBounds="true" preserveRatio="true" />
+    <ImageView id="topmiddle" fx:id="topcenter" fitHeight="73.0" fitWidth="84.0" layoutX="309.0" layoutY="128.0" onMouseClicked="#drawTopCenter" pickOnBounds="true" preserveRatio="true" />
+    <ImageView fx:id="topright" fitHeight="73.0" fitWidth="84.0" layoutX="405.0" layoutY="129.0" onMouseClicked="#drawTopRight" pickOnBounds="true" preserveRatio="true" />
+    <ImageView id="middleleft" fx:id="centerleft" fitHeight="83.0" fitWidth="84.0" layoutX="211.0" layoutY="212.0" onMouseClicked="#drawCenterLeft" pickOnBounds="true" preserveRatio="true" />
+    <ImageView id="middlemiddle" fx:id="centercenter" fitHeight="83.0" fitWidth="84.0" layoutX="307.0" layoutY="210.0" onMouseClicked="#drawCenterCenter" pickOnBounds="true" preserveRatio="true" />
+    <ImageView id="mi" fx:id="centerright" fitHeight="83.0" fitWidth="89.0" layoutX="402.0" layoutY="212.0" onMouseClicked="#drawCenterRight" pickOnBounds="true" preserveRatio="true" />
+    <ImageView fx:id="bottomleft" fitHeight="73.0" fitWidth="84.0" layoutX="212.0" layoutY="304.0" onMouseClicked="#drawBottomLeft" pickOnBounds="true" preserveRatio="true" />
+    <ImageView fx:id="bottomcenter" fitHeight="73.0" fitWidth="89.0" layoutX="304.0" layoutY="304.0" onMouseClicked="#drawBottomCenter" pickOnBounds="true" preserveRatio="true" />
+    <ImageView fx:id="bottomright" fitHeight="73.0" fitWidth="89.0" layoutX="405.0" layoutY="304.0" onMouseClicked="#drawBottomRight" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="42.0" fitWidth="45.0" layoutX="44.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/avatar/1.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="42.0" fitWidth="45.0" layoutX="601.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/avatar/comp.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="playerName" layoutX="120.0" layoutY="27.0" text="player 1">
+         <textFill>
+            <RadialGradient centerX="0.3577777862548828" centerY="0.8053434932504902" radius="0.75">
+               <stops>
+                  <Stop color="#ea7426" />
+                  <Stop color="#f0e54d" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+         <font>
+            <Font name="Showcard Gothic" size="14.0" />
+         </font></Label>
+      <Label layoutX="494.0" layoutY="27.0" text="Computer">
+         <font>
+            <Font name="Showcard Gothic" size="14.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.3577777862548828" centerY="0.8053434932504902" radius="0.75">
+               <stops>
+                  <Stop color="#ea7426" />
+                  <Stop color="#f0e54d" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill></Label>
+      <Label layoutX="341.0" layoutY="28.0" text="VS">
+         <font>
+            <Font name="Showcard Gothic" size="16.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.3577777862548828" centerY="0.8053434932504902" radius="0.75">
+               <stops>
+                  <Stop color="#ea7426" />
+                  <Stop color="#f0e54d" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill></Label>
+      <JFXButton fx:id="playBtn" buttonType="RAISED" layoutX="605.0" layoutY="113.0" onAction="#play" opacity="0.96" prefHeight="34.0" prefWidth="39.0" ripplerFill="WHITE" styleClass="volume" stylesheets="@css/menu-background.css" text="play" textFill="#ffffff00" />
+      <JFXButton fx:id="stopBtn" buttonType="RAISED" layoutX="605.0" layoutY="178.0" onAction="#stop" opacity="0.96" prefHeight="34.0" prefWidth="39.0" ripplerFill="WHITE" styleClass="mute" stylesheets="@css/menu-background.css" text="stop" textFill="#ffffff00" />
+      <JFXButton fx:id="backBtn" buttonType="RAISED" layoutX="605.0" layoutY="242.0" onAction="#back" opacity="0.96" prefHeight="34.0" prefWidth="39.0" ripplerFill="WHITE" styleClass="home" stylesheets="@css/menu-background.css" text="home" textFill="#ffffff00" />
+      <Label fx:id="playerscore" layoutX="126.0" layoutY="52.0" text="0">
+         <font>
+            <Font name="Showcard Gothic" size="16.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.3577777862548828" centerY="0.8053434932504902" radius="0.75">
+               <stops>
+                  <Stop color="#ea7426" />
+                  <Stop color="#f0e54d" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+      <ImageView fitHeight="18.0" fitWidth="27.0" layoutX="149.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/11.png" />
+         </image>
+      </ImageView>
+  </children>
+</AnchorPane>
