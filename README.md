@@ -16,7 +16,7 @@ Kindly use the JAR file of the server.
 Launch any number you want of clients but keep in mind to sign up first before trying to sign in with an account.
 
 ## Team Members:
-*[Mohamed Ashraf Mohamed Mohamed](www.linkedin.com/in/mohamed-elbermawy-b99954b8)<br>
+*[Mohamed Ashraf Mohamed Mohamed](https://www.linkedin.com/in/mohamed-elbermawy-b99954b8)<br>
 *[Ahmed Elbaiomy mahmoud salem](https://www.linkedin.com/in/ahmed-elbaiomy-976553114/)<br>
 *[Hebat Allah Ayman](https://www.linkedin.com/in/heba-elmasry-091635111)<br>
 *[Esraa Mohamed Taha Farhat](https://www.linkedin.com/in/esraa-farhat-e1997) <br>
