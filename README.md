@@ -24,9 +24,9 @@ Launch any number you want of clients but keep in mind to sign up first before t
 
 ## Game Images :
 ![Login](images/Login.PNG)<br>
-![Sign Up](images/SignUp.png)<br>
-![Main Page](images/MainPage.png)<br>
-![Game Levels](images/GameLevels.png)<br>
+![Sign Up](images/SignUp.PNG)<br>
+![Main Page](images/MainPage.PNG)<br>
+![Game Levels](images/GameLevels.PNG)<br>
 ![Single](images/Single.PNG)<br>
 ![Single Game](images/SingleGame.png)<br>
 ![TwoPlayers](images/TwoPlayers.png)<br>
