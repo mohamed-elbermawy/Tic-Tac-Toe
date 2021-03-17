@@ -23,13 +23,13 @@ Launch any number you want of clients but keep in mind to sign up first before t
 *[Islam Ahmed Abdou](https://www.linkedin.com/in/islam-ahmed-265872187) <br>
 
 ## Game Images :
-![Login](images/Login.PNG)
-![Sign Up](images/Sign\ Up.PNG)
-![Main Page](images/Main\ Page.PNG)
-![Game Levels](images/Game\ Levels.PNG)
-![Single](images/Single.PNG)
-![Single Game](images/Single\ Game.PNG)
-![TwoPlayers](images/TwoPlayers.PNG)
-![TwoPlayersGame](images/TwoPlayersGame.PNG)
-![Settings](images/Settings.PNG)
-![Winner](images/Winner.PNG)
+![Login](images/Login.PNG)<br>
+![Sign Up](images/Sign Up.PNG)<br>
+![Main Page](images/Main Page.PNG)<br>
+![Game Levels](images/Game Levels.PNG)<br>
+![Single](images/Single.PNG)<br>
+![Single Game](images/Single Game.PNG)<br>
+![TwoPlayers](images/TwoPlayers.PNG)<br>
+![TwoPlayersGame](images/TwoPlayersGame.PNG)<br>
+![Settings](images/Settings.PNG)<br>
+![Winner](images/Winner.PNG)<br>
